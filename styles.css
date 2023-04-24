@@ -4,6 +4,10 @@ body{
   font-family: 'Playfair Display', serif !important;
 }
 
+img{
+  object-fit: cover;
+}
+
 header{
   position: fixed;
   top: 0;
@@ -20,6 +24,34 @@ header{
   color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 0px 10px 0 10px;
+}
+
+.sub-menu-list{
+  color: white;
+  text-align: center;
+}
+
+.sub-menu-list div{
+  padding: 20px 0 20px 0;
+  /* font-size: 20px; */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.172);
+}
+
+.sub-menu-list div:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.sub_menu_btn{
+  position: absolute;
+  top: 10;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 30px;
+  opacity: 50%;
+
 }
 
 .menu-list{
@@ -46,6 +78,14 @@ header{
 
 .menu-list .active{
   color: yellow !important;
+}
+
+.sub-menu-list .active{
+  color: yellow !important;
+}
+
+.hide-element{
+  display: none;
 }
 
 .menu-list div:hover{
@@ -84,6 +124,9 @@ header{
   width: 100%;
   height: 100vh;
 }
+
+
+/* CAROUSEL  */
 
 .carousel-inner img{
   height: 100vh;
@@ -133,6 +176,9 @@ header{
 }
 
 
+
+
+/* footer  */
 .footer-dark {
   padding:50px 0;
   color:#f0f9ff;
@@ -228,6 +274,64 @@ header{
 }
 
 
+
+
+/* TITLE CONTENT  */
+.content img{
+  border-radius: 4px;
+}
+
+
+.title-content{
+  font-weight: 700;
+  font-family: 'Dancing Script', serif;
+  border-bottom: 1px solid rgba(180, 180, 180, 0.226);
+
+}
+
+.title-content h1{
+  font-size: 50px !important;
+}
+
+.title-content p{
+  font-size: 25px;
+  color: rgba(210, 40, 40, 0.988);
+
+}
+
+.content-3-row div{
+  /* display: flex;
+  align-items: center; */
+  margin: auto 0px auto 0px;
+  font-size: 15px;
+  text-align: justify;
+}
+
+/* OUR SERVICE  */
+.card-service{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(252, 251, 255);
+  height: 260px;
+  padding: 10px;
+  padding-top: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+
+}
+.card-service h2{
+  text-align: center;
+}
+.card-service i{
+  display: inline;
+  font-size: 50px;
+  text-align: center;
+  color: rgb(0, 255, 68);
+}
+
+
 /* back to top css  */
 #btn-back-to-top {
   position: fixed;
@@ -235,4 +339,43 @@ header{
   right: 20px;
   display: none;
   z-index: 200;
+}
+
+
+/* RESPONSIVE  */
+@media (max-width:767px) {
+  .show_responsive {
+    visibility: hidden ;
+  }
+  .carousel-inner img{
+  height: 100vh;
+  object-fit: cover;
+  }
+  .carousel-caption .content-caption{
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+  height: 90%;
+  /* opacity: 50%; */
+  display: flex;
+  align-items: center;
+  font-size: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition-duration: 200ms;
+  }
+  .carousel-inner h5{
+  font-size: 15px !important; 
+  }
+  .carousel-inner h4{
+  font-size: 15px !important; 
+  }
+}
+
+@media (min-width:767px) {
+  .show_off_responsive {
+    visibility: hidden ;
+  }
+  .sub-menu{
+    display: none;
+  }
 }
