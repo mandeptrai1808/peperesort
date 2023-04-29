@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu</title>
+    <link href="./image/logocircle.png" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="dangnhap.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <script>
+     
+
+    </script>
+    <header class="bg-black bg-opacity-75">
+      <div class="menu">
+        <button onclick="subMenuButton()" class="sub_menu_btn show_off_responsive">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="logo">
+          <a href="./index.html">
+            <img width="200px" src="./image/logoreal.png" />
+          </a>
+        </div>
+        <div class="menu-list show_responsive">
+          <div>
+            <a href="/index.html" >Trang chủ</a>
+          </div>
+          <div>
+            <a href="/gioithieu.html">Giới thiệu</a>
+          </div>
+          <div>
+            <a href="phong.html">Phòng</a>
+          </div>
+          <div>
+            <a>Phòng đă đặt</a>
+          </div>
+          <div>
+            <a href="lienhe.html">Liên hệ</a>
+          </div>
+        </div>
+        <div
+        class="show_responsive"
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          "
+        >
+        <form
+          method="" id="searchForm" action=""
+          class="pt-0"
+          style="height: fit-content"
+          class="form-group has-search"
+          onsubmit="return submitSearch()"
+        >
+          <!-- <span class="fa fa-search form-control-feedback"></span> -->
+          <input
+            id="inputSearch"
+            type="text"
+            height="100%"
+            class="form-control"
+            placeholder="Search"
+            value=""
+          />
+        </form>
+        <div id="user-button">
+            <div>
+              <a href="./dangnhap.html">
+                <button type="button" class="btn btn-primary mx-2">
+                  Đăng nhập
+                </button>
+              </a>
+            </div>
+            <div>
+              <a href="./dangky.html">
+                <button type="button" class="btn btn-danger">Đăng Kí</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="sub-menu" class="sub-menu hide-element">
+        <div class="sub-menu-list">
+            <div>
+                <a href="/index.html" >Trang chủ</a>
+              </div>
+              <div>
+                <a href="/gioithieu.html">Giới thiệu</a>
+              </div>
+              <div>
+                <a href="phong.html">Phòng</a>
+              </div>
+              <div>
+                <a href="./phongdadat.html">Phòng đă đặt</a>
+              </div>
+              <div>
+                <a href="lienhe.html">Liên hệ</a>
+              </div>
+              <div id="user-button-sub">
+                <div class="p-0">
+                  <a href="./dangnhap.html">
+                    <button type="button" class="btn btn-primary w-100 h-100 py-3"> 
+                    Đăng nhập
+                  </button>
+                  </a>
+                </div>
+                <div class="p-0">
+                  <a href="./dangky.html">
+                    <button type="button" class="btn btn-danger w-100 h-100 py-3">Đăng Kí</button>
+                  </a>
+                </div>
+              </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- CAROUSEL  -->
+      
+      
+      <div class="content container pb-5 pt-5">
+        <div class="my-5">
+          <div class="title-content py-2 mb-5">
+            <h1 class="text-center">ĐĂNG NHẬP
+            </h1>
+          </div>
+  
+        </div>
+          
+          <div class="my-5">
+                <form action="./index.html" onsubmit="return submitLogin()" class="form-login">
+                    <table>
+                        <tr>
+                            <td><i class="fas fa-envelope"></i></td>
+                            <td><input id="email" placeholder="Vui lòng nhập email"/></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-lock"></i></td>
+                            <td><input id="password" placeholder="Vui lòng nhập mật khẩu"/></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="text-center">Chưa có tài khoản? <a href="./dangky.html">Đăng kí ngay</a></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+            </main>
+
+    <div class="footer-dark">
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-6 col-md-3 item">
+                      <h3>Dịch vụ</h3>
+                      <ul>
+                          <li><a href="#">Đặt phòng</a></li>
+                          <li><a href="#">Tư vấn</a></li>
+                          <li><a href="#">Hỗ trợ khách hàng</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-3 item">
+                      <h3>Thông tin về chúng tôi</h3>
+                      <ul>
+                          <li><a href="#">Địa chỉ</a></li>
+                          <li><a href="#">Liên lạc</a></li>
+                          <li><a href="#">Nhân viên</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6 item text">
+                      <h3>Sun of the Beach</h3>
+                      <p>Sun of the Beach là một resort nghỉ dưỡng nằm ngay trên bãi biển đẹp nhất của thành phố. Với không gian thoáng đãng, phòng nghỉ tiện nghi, các hoạt động giải trí đa dạng cùng dịch vụ chăm sóc khách hàng thân thiện và chuyên nghiệp, Sun of the Beach sẽ mang đến cho quý khách một kỳ nghỉ đáng nhớ.</p>
+                  </div>
+                  <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+              </div>
+              <div class="copyright">
+                Sun of the Beach © 2023
+                <img src="./image/logoreal.png" width="100px"/>
+              </div>
+              
+              
+          </div>
+      </footer>
+      </div>
+    <!-- BACK TO TOP  -->
+    <button
+        type="button"
+        class="btn btn-danger btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+        <a href="#">
+
+            <i class="far fa-arrow-alt-circle-up"></i>
+        </a>
+    </button>
+</button>
+
+    <script src="scripts.js"></script>
+    <script src="dangnhap.js"/>
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+  </body>
+</html>

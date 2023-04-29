@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Khu nghỉ dưỡng 5 sao</title>
+    <title>Giới thiệu</title>
     <link href="./image/logocircle.png" rel="icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,6 +35,8 @@
   </head>
   <body>
     <script>
+     
+
     </script>
     <header class="bg-black bg-opacity-75">
       <div class="menu">
@@ -48,13 +50,13 @@
         </div>
         <div class="menu-list show_responsive">
           <div>
-            <a href="#" class="active">Trang chủ</a>
+            <a href="/index.html" >Trang chủ</a>
           </div>
           <div>
-            <a href="/gioithieu.html">Giới thiệu</a>
+            <a class="active">Giới thiệu</a>
           </div>
           <div>
-            <a href="/phong.html">Phòng</a>
+            <a href="phong.html">Phòng</a>
           </div>
           <div>
             <a href="phongdadat.html">Phòng đă đặt</a>
@@ -72,48 +74,48 @@
           "
         >
         <form
-          onsubmit="return submitSearch()"
-          method="" id="searchForm" action=""
-          class="pt-0 mr-5"
-          style="height: fit-content"
-          class="form-group has-search"
-        >
-          <!-- <span class="fa fa-search form-control-feedback"></span> -->
-          <input
-            id="inputSearch"
-            type="text"
-            height="100%"
-            class="form-control"
-            placeholder="Search"
-            value=""
-          />
-        </form>
-        <div id="user-button">
-          <div>
-            <a href="./dangnhap.html">
-              <button type="button" class="btn btn-primary mx-2">
-                Đăng nhập
-              </button>
-            </a>
-          </div>
-          <div>
-            <a href="./dangky.html">
-              <button type="button" class="btn btn-danger">Đăng Kí</button>
-            </a>
-          </div>
+        onsubmit="return submitSearch()"
+        method="" id="searchForm" action=""
+        class="pt-0"
+        style="height: fit-content"
+        class="form-group has-search"
+      >
+        <!-- <span class="fa fa-search form-control-feedback"></span> -->
+        <input
+          id="inputSearch"
+          type="text"
+          height="100%"
+          class="form-control"
+          placeholder="Search"
+          value=""
+        />
+      </form>
+      <div id="user-button">
+        <div>
+          <a href="./dangnhap.html">
+            <button type="button" class="btn btn-primary mx-2">
+              Đăng nhập
+            </button>
+          </a>
         </div>
+        <div>
+          <a href="./dangky.html">
+            <button type="button" class="btn btn-danger">Đăng Kí</button>
+          </a>
+        </div>
+      </div>
         </div>
       </div>
       <div id="sub-menu" class="sub-menu hide-element">
         <div class="sub-menu-list">
           <div>
-            <a href="#" class="active">Trang chủ</a>
+            <a href="/index.html" >Trang chủ</a>
           </div>
           <div>
-            <a href="/gioithieu.html">Giới thiệu</a>
+            <a class="active">Giới thiệu</a>
           </div>
           <div>
-            <a href="/phong.html">Phòng</a>
+            <a href="phong.html">Phòng</a>
           </div>
           <div>
             <a href="phongdadat.html">Phòng đă đặt</a>
@@ -121,21 +123,20 @@
           <div>
             <a href="lienhe.html">Liên hệ</a>
           </div>
-          <div>
-            <div id="user-button-sub">
-              <div class="p-0">
-                <a href="./dangnhap.html">
-                  <button type="button" class="btn btn-primary w-100 h-100 py-3"> 
-                  Đăng nhập
-                </button>
-                </a>
-              </div>
-              <div class="p-0">
-                <a href="./dangky.html">
-                  <button type="button" class="btn btn-danger w-100 h-100 py-3">Đăng Kí</button>
-                </a>
-              </div>
+          <div id="user-button-sub">
+            <div class="p-0">
+              <a href="./dangnhap.html">
+                <button type="button" class="btn btn-primary w-100 h-100 py-3"> 
+                Đăng nhập
+              </button>
+              </a>
             </div>
+            <div class="p-0">
+              <a href="./dangky.html">
+                <button type="button" class="btn btn-danger w-100 h-100 py-3">Đăng Kí</button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -145,105 +146,32 @@
       <!-- CAROUSEL  -->
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./image/panel.jpg" class="d-block w-100" alt="1" />
+            <img src="./image/gioithieu/panel.jpg" class="d-block w-100" alt="1" />
             <div class="carousel-caption d-md-block">
               <div class="content-caption">
                 <div>
-                  <h4>Chào mừng đến với</h4>
-                  <h5>SUN OF THE BEACH RESORT</h5>
+                  <h4>Sun Of The Beach</h4>
+                  <h5>GIỚI THIỆU</h5>
                   <p>
                     Sun of the beach là một khu nghỉ dưỡng tuyệt vời nằm sát bờ
                     biển, cung cấp cho khách hàng những trải nghiệm nghỉ dưỡng
                     đầy lý thú và thoải mái.
                   </p>
-                  <button onclick="window.location='phong.html'" type="button" class="btn btn-outline-light">Đặt ngay</button>
+                  <!-- <button ype="button" class="btn btn-outline-light">Đặt ngay</button> -->
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="carousel-item">
-            <img src="./image/panel2.jpg" class="d-block w-100" alt="2" />
-            <div class="carousel-caption d-md-block">
-              <div class="content-caption">
-               <div>
-                <h4>Sun of the Beach Resort</h4>
-                <h5>KHÔNG GIAN THOẢI MÁI</h5>
-                <p>
-                  Đây là khu nhà nghỉ dưỡng trong danh sách các resort ở Việt
-                  Nam mà những bạn ở TP Hồ Chí Minh hay lựa chọn nhất. Không chỉ
-                  nhờ vào vị trí địa lý, mà khu nghỉ này gây ấn tượng với lối
-                  kiến trúc giao thoa giữa vẻ đẹp truyền thống Việt Nam và nét
-                  văn hoá Địa Trung Hải.
-                </p>
-                <button onclick="window.location='phong.html'" type="button" class="btn btn-outline-light">Đặt ngay</button>
-               </div>
-              </div>
-            </div>
-          </div>
+          
 
-          <div class="carousel-item">
-            <img src="./image/panel3.jpg" class="d-block w-100" alt="3" />
-            <div class="carousel-caption d-md-block">
-              <div class="content-caption">
-                <div>
-                 <h4>Sun of the Beach Resort</h4>
-                 <h5>HƯƠNG VỊ TUYỆT VỜI</h5>
-                 <p>
-                   Đây là khu nhà nghỉ dưỡng trong danh sách các resort ở Việt
-                   Nam mà những bạn ở TP Hồ Chí Minh hay lựa chọn nhất. Không chỉ
-                   nhờ vào vị trí địa lý, mà khu nghỉ này gây ấn tượng với lối
-                   kiến trúc giao thoa giữa vẻ đẹp truyền thống Việt Nam và nét
-                   văn hoá Địa Trung Hải, mang đến cho bạn cảm giác vừa lạ mà vừa
-                   quen.
-                 </p>
-                 <button onclick="window.location='phong.html'" type="button" class="btn btn-outline-light">Đặt ngay</button>
-                </div>
-               </div>
-            </div>
-          </div>
+       
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      
+   
       </div>
       
       <div class="content container pb-5">
@@ -258,78 +186,47 @@
   
           <div class="content-3-row row">
            
-              <div class="col-md col-12">
-                <img class="mb-4" src="./image/trangchu/hinh1.jpg" width="100%" height="200px"/>
+              <div class="col-md-4 col-12">
+                <img class="mb-4" src="./image/gioithieu/hinh1.jpg" width="100%" height="200px"/>
               </div>
-              <div class="col-md col-12 h-100 ">
+              <div class="col-md-8 col-12 h-100 ">
                 <p>
-                  Một trong những yếu tố hàng đầu để những chuyến công tác của bạn trở nên nhẹ nhàng, thoải mái chính là việc lựa chọn một khách sạn cao cấp để lưu trú trong suốt thời gian đi công tác. Những khách sạn sang trọng với nhiều dịch vụ cao cấp, gần trung tâm và nơi công tác vừa giúp cho bạn được thư thả, tận hưởng thời gian nghỉ ngơi.
+                    Sun Of The Beach là một resort được tọa lạc tại vị trí đẹp nhất của bãi biển Cửa Lò, Nghệ An. Với hệ thống phòng nghỉ hiện đại và tiện nghi, Sun Of The Beach sẽ mang đến trải nghiệm nghỉ dưỡng tuyệt vời cho du khách. Không chỉ có vậy, resort còn có các hoạt động giải trí sôi nổi như bơi lội, chơi golf, quần vợt và các hoạt động dã ngoại khác. Hơn nữa, nơi đây cũng là điểm đến lý tưởng cho các hội nghị và sự kiện công ty, với hệ thống phòng hội nghị và các dịch vụ hỗ trợ chuyên nghiệp. Với một đội ngũ nhân viên chuyên nghiệp, nhiệt tình và ân cần, Sun Of The Beach sẽ mang đến cho du khách những trải nghiệm nghỉ dưỡng đáng nhớ.
                 </p>
               </div>
-              <div class="col-md col-12 h-100">
-                <p>
-                  Một trong những yếu tố hàng đầu để những chuyến công tác của bạn trở nên nhẹ nhàng, thoải mái chính là việc lựa chọn một khách sạn cao cấp để lưu trú trong suốt thời gian đi công tác. Những khách sạn sang trọng với nhiều dịch vụ cao cấp, gần trung tâm và nơi công tác vừa giúp cho bạn được thư thả, tận hưởng thời gian nghỉ ngơi.
-                </p>
-            
-            </div>
   
           </div>
         </div>
 
-        <div class="my-5">
-          <div class="title-content py-2 mb-5">
-            <h1>Loại Phòng
-            </h1>
-            <p>
-            Dịch vụ phòng tuyệt hảo
-          </p>
-          </div>
-          <div class="content-3-row row">
-              <div class="col-md col-12">
-                <img class="mb-4" src="./image/trangchu/room1.jpg" width="100%" height="300px"/>
-              </div>
-              <div class="col-md col-12 h-100 ">
-                <div class="col-md col-12">
-                  <img class="mb-4" src="./image/trangchu/room2.jpg" width="100%" height="300px"/>
-                </div>
-              </div>
-              <div class="col-md col-12 h-100">
-                <div class="col-md col-12">
-                  <img class="mb-4" src="./image/trangchu/room3.jpg" width="100%" height="300px"/>
-                </div>
-            
-              </div>
-              <div class="text-center">
-                <button onclick="window.location='phong.html'" type="button" class="btn btn-danger">ĐẶT NGAY</button>
-              </div>
-
-            </div>
-          </div>
           
           <div class="my-5">
             <div class="title-content py-2 mb-5">
-              <h1>Thức Ăn
+              <h1>Đội Ngũ Nhân Viên
               </h1>
               <p>
-              Dịch vụ phòng tuyệt hảo
+              Đội ngũ nhân viên cực kì chất lượng
             </p>
             </div>
-            <div class="content-3-row row">
+            <div class="content-3-row row staff-card">
                 <div class="col-md col-12">
-                  <img class="mb-4" src="./image/trangchu/room1.jpg" width="100%" height="300px"/>
+                  <img class="mb-4" src="./image/gioithieu/loc.png" width="100%" height="300px"/>
+                  <h5>Văn Tiến Lộc</h5>
                 </div>
                 <div class="col-md col-12 h-100 ">
-                    <img class="mb-4" src="./image/trangchu/room2.jpg" width="100%" height="300px"/>
+                    <img class="mb-4" src="./image/gioithieu/man.png" width="100%" height="300px"/>
+                  <h5>Nguyễn Văn Mặn</h5>
+
                 </div>
                 <div class="col-md col-12 h-100">
-                    <img class="mb-4" src="./image/trangchu/room3.jpg" width="100%" height="300px"/>
+                    <img class="mb-4" src="./image/gioithieu/kien.png" width="100%" height="300px"/>
+                  <h5>Đổ Trung Kiên</h5>
+
                 </div>
                 <div class="col-md col-12 h-100">
-                  <img class="mb-4" src="./image/trangchu/room3.jpg" width="100%" height="300px"/>
+                  <img class="mb-4" src="./image/gioithieu/tai.png" width="100%" height="300px"/>
+                  <h5>Huỳnh Tú Tài</h5>
+
               </div>
-                <div class="text-center">
-                  <button type="button" class="btn btn-danger">ĐẶT NGAY</button>
-                </div>
   
               </div>
             </div>
@@ -411,7 +308,6 @@
           </div>
       </footer>
       </div>
-      
     <!-- BACK TO TOP  -->
     <button
     type="button"
@@ -422,6 +318,7 @@
 
         <i class="far fa-arrow-alt-circle-up"></i>
     </a>
+</button>
 </button>
 
     <script src="scripts.js"></script>

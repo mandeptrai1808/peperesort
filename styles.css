@@ -37,6 +37,11 @@ header{
   border-bottom: 1px solid rgba(255, 255, 255, 0.172);
 }
 
+.sub-menu-list a{
+  color: white;
+  text-decoration: none;
+}
+
 .sub-menu-list div:hover{
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -111,6 +116,35 @@ header{
   color: white;
   text-decoration: none;
 }
+
+#user-button{
+  display: flex;
+}
+
+.user-content{
+  display: flex;
+  margin-left: 20px;
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.user-content :hover{
+  opacity:  100%;
+}
+
+.user-content i{
+  font-size: 40px;
+  margin-left: 10px;
+  opacity: 90%;
+}
+
+#user-button-sub .user-content{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
 
 .panel-bg{
   /* background-color: blueviolet; */
@@ -284,7 +318,7 @@ header{
 
 .title-content{
   font-weight: 700;
-  font-family: 'Dancing Script', serif;
+  /* font-family: 'Dancing Script', serif; */
   border-bottom: 1px solid rgba(180, 180, 180, 0.226);
 
 }
@@ -305,6 +339,34 @@ header{
   margin: auto 0px auto 0px;
   font-size: 15px;
   text-align: justify;
+
+}
+
+
+.content-3-row div h5{
+  text-align: center;
+  font-size: 25px;
+}
+
+.room-card  h5{
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+.room-card p{
+  font-size: 18px;
+  /* font-weight: bold; */
+
+}
+
+.room-card{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px;
+}
+
+#room-content div{
+  margin-bottom: 20px;
 }
 
 /* OUR SERVICE  */
@@ -331,14 +393,45 @@ header{
   color: rgb(0, 255, 68);
 }
 
+/* Lien he  */
+.contact-tab{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.contact-tab p{
+  text-align: center;
+  margin: 0;
+  margin-left: 20px;
+}
+
+.contact-tab i{
+  color: rgb(255, 0, 98);
+}
+
 
 /* back to top css  */
 #btn-back-to-top {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   bottom: 20px;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
   right: 20px;
-  display: none;
+  /* display: none; */
   z-index: 200;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#btn-back-to-top a{
+  color:white;
+  text-decoration:none;
+  font-size: 30px;
 }
 
 
@@ -368,6 +461,9 @@ header{
   }
   .carousel-inner h4{
   font-size: 15px !important; 
+  }
+  #user-button{
+    display: block;
   }
 }
 
